@@ -1,26 +1,20 @@
 package Pattern2;
 import java.util.*;
-public class Pattern8 {
+public class pattern18 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		int i=1;
-		while(i<=n) {
-			int spaces=1;
-			while(spaces<=n-i) {
+		for(int i=1;i<=n;i++) {
+			for(int spaces=1;spaces<=n-i;spaces++) {		//for(int j=1;j<=n-i;j++)
 				System.out.print(" ");
-				spaces++;
-			} 
-			int stars=1;
-			while(stars<=2*i-1) {
+				
+			}
+			for(int j=1;j<=n;j++) {
 				System.out.print('*');
-				stars++;		
 			}
 			System.out.println();
-			i++;
 		}
-		// TODO Auto-generated method stub
 
 	}
 

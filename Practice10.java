@@ -1,18 +1,30 @@
-package lecture7;
-
+package Pattern2;
+import java.util.*;
 public class Practice10 {
 
 	public static void main(String[] args) {
-//		for(int i=1;i<10;i*=2) {
-//			System.out.println(i);
-	//	}
-//		for(int i=483;i>0;i=i%3) {
-//			System.out.print("*");
-//		}
-		for(int i=0;i<3;i++) {
-			System.out.print(i+" ");
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int i=1;
+		
+		while(i<=n) {
+			int j=1;
+			char p=(char)('A'+i-1);
+			while(j<=i) {
+				System.out.print(p);
+				
+				j++;
+			}
+			
+			
+			
+			
+			System.out.println();
+			i++;
+
 		}
-	//	System.out.print(i+" ");
+		// TODO Auto-generated method stub
+
 	}
 
 }

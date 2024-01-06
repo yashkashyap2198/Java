@@ -1,18 +1,29 @@
-package lecture7;
-
+package Pattern2;
+import java.util.*;
 public class Practice5 {
 
 	public static void main(String[] args) {
-		int x=10;
-		int y=20;
-	//	if(x++>10&&++y>20) {
-			if(x++>10||++y>20) {
-			System.out.print("Inside if");
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int i=1;
+		
+		while(i<=n) {
+			int j=1;
+			int p=n-j+1;
+			while(j<=n) {
+				System.out.print(n-j+1);
+			//	p--;
+				j++;
+			}
 			
-		}else {
-			System.out.print("Inside else");
+			
+			
+			System.out.println();
+			i++;
+
 		}
-		System.out.print(x+" "+y);
+		// TODO Auto-generated method stub
+
 	}
 
 }

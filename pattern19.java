@@ -1,27 +1,20 @@
 package Pattern2;
 import java.util.*;
-public class Practice3 {
+public class pattern19 {
 
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		int i=1;
-		
-		while(i<=n) {
-			int j=1;
-
-			while(j<=i) {
-				System.out.print(j);
-				
-				j++;
+		int i,j;
+		for(i=1;i<=n;i++) {
+			for(j=1;j<=n-i;j++) {
+				System.out.print(" ");
 			}
-			i++;
+			for(j=1;j<=i;j++) {
+			System.out.print(i+" ");
+			}
 			System.out.println();
-
-
 		}
-		// TODO Auto-generated method stub
-
 	}
 
 }

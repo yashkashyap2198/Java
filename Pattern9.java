@@ -1,5 +1,5 @@
-package Pattern;
-import java.util.Scanner;
+package Pattern2;
+import java.util.*;
 public class Pattern9 {
 
 	public static void main(String[] args) {
@@ -7,17 +7,24 @@ public class Pattern9 {
 		int n= s.nextInt();
 		int i=1;
 		while(i<=n) {
-			int j=1;
-			int p=i;
-			while(j<=i) {
-				System.out.print(p);
-				p++;
-				j++;
+			int spaces=1;
+			while(spaces<=n-i) {
+				System.out.print(" ");
+				spaces=spaces+1;
+			}
+			int num=1;
+			while(num<=i) {
+				System.out.print(i);
+				num++;
+			}
+			int dec=i-1;
+			while(dec>=i) {
+				System.out.print(i);
+				dec=dec-1;
 			}
 			System.out.println();
 			i++;
 		}
-
 	}
 
 }
